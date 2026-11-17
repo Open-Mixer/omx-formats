@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Pau Aliagas <linuxnow@gmail.com>
+# Copyright (C) 2026 Pau Aliagas
 name: ci
 
 on:
@@ -23,14 +23,16 @@ jobs:
         with:
           node-version: 22
       # the omx-contract release this tree is built with: its loader reads the modules (a module of a group, a terms item
-      # and its common words, schema 3.20.0). OMX_CONTRACT_REF is the ref of the change that carries it; it becomes the
-      # release tag when omx-contract releases.
+      # and its common words, schema 3.20.0). OMX_CONTRACT_REF is the commit of omx-contract#87 that carries it, pinned
+      # by SHA; it becomes the release tag of omx-contract 3.21.0 (omx-contract#90).
       - name: The omx-contract command
         env:
-          OMX_CONTRACT_REF: lane/omx-contract-domain-terms
+          OMX_CONTRACT_REF: 527b78c7938a24544ef5fde056fec4e4ed2de179
         run: |
-          git clone --depth 1 --branch "$OMX_CONTRACT_REF" https://github.com/Open-Mixer/omx-contract.git "$RUNNER_TEMP/omx-contract"
+          git init -q "$RUNNER_TEMP/omx-contract"
           cd "$RUNNER_TEMP/omx-contract"
+          git fetch -q --depth 1 https://github.com/Open-Mixer/omx-contract.git "$OMX_CONTRACT_REF"
+          git checkout -q FETCH_HEAD
           npm ci
           make build-lib
           echo "OMX_CONTRACT=$RUNNER_TEMP/omx-contract/bin/omx-contract.mjs" >> "$GITHUB_ENV"

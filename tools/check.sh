@@ -1,6 +1,6 @@
 #!/bin/sh
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Pau Aliagas <linuxnow@gmail.com>
+# Copyright (C) 2026 Pau Aliagas
 # The tree's check. Every .json under contract.d/ parses (shell and python3 only). With OMX_CONTRACT set to the
 # omx-contract command (bin/omx-contract.mjs of a checkout of the release this tree is built with, or the installed
 # omx-contract), it also: validates the modules; proves the committed renders are the render of the modules; and proves
@@ -19,6 +19,10 @@ for f in $(find contract.d -name '*.json' | sort); do
   n=$((n+1))
 done
 echo "check: $n files parse"
+for f in $(find contract.d -name '*.json' | sort); do
+  python3 -I -c 'import json,sys; o=json.load(open(sys.argv[1]))["info"]["x-owner"]; sys.exit(0 if o=="omx-formats" else "x-owner is "+repr(o)+", not omx-formats")' "$f" || { echo "check: $f" >&2; exit 1; }
+done
+echo "check: every module is owned by omx-formats"
 [ -n "${OMX_CONTRACT:-}" ] || { echo "check: OMX_CONTRACT is not set: the renders are not checked" >&2; exit 0; }
 oc() { node "$OMX_CONTRACT" "$@"; }
 out=$(mktemp -d); trap 'rm -rf "$out"' EXIT

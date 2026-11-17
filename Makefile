@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Pau Aliagas <linuxnow@gmail.com>
+# Copyright (C) 2026 Pau Aliagas
 #
 # Installs contract.d/ (the format modules) under CONTRACTDIR, the directory omx-contract's readers read, and the committed
 # renders of the modules: the C header under INCLUDEDIR/omxcontract, the Python module under FORMATSDIR. No node runs

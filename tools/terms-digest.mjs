@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// Copyright (C) 2026 Pau Aliagas <linuxnow@gmail.com>
+// Copyright (C) 2026 Pau Aliagas
 // The digest of the terms items of a resolved json render (`omx-contract render --target json`), the file each item
 // came from left out: `<count> <sha256>` of the items by name. The same digest of omx-contract's classic data/formats/
 // is held in test/golden/terms.digest, so a term dropped, added or changed anywhere is a different line.

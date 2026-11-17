@@ -10,10 +10,19 @@ Rules-Requires-Root: no
 Package: omx-formats
 Architecture: all
 Multi-Arch: foreign
-Depends: omx-contract-data, ${misc:Depends}
+Depends: omx-contract-data (>= 3.21.0), ${misc:Depends}
 Description: The plugin-format vocabulary of OpenMixer, one module per format
  The identifiers, numbers and terms of the plugin formats OpenMixer hosts,
  each mapped under its own name with its status for us: one self-describing
  module per format (CLAP, LV2) and a common module of the terms they share,
  each with its own version and its catalogs. They install into the contract
  directory omx-contract's readers read.
+
+Package: libomx-formats-dev
+Architecture: all
+Multi-Arch: foreign
+Section: libdevel
+Depends: omx-formats (= ${binary:Version}), ${misc:Depends}
+Description: The C header of the plugin-format vocabulary of OpenMixer
+ The C header omxcontract/omx_formats.h: the CLAP identifiers and numbers and
+ the LV2 namespaces, rendered from the modules of omx-formats.
