@@ -6,4 +6,4 @@
 	dh $@
 
 override_dh_auto_install:
-	dh_auto_install -- PREFIX=/usr DATADIR=/usr/share
+	dh_auto_install -- PREFIX=/usr DATADIR=/usr/share INCLUDEDIR=/usr/include

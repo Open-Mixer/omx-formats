@@ -19,11 +19,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: The tree parses and installs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # the omx-contract release this tree is built with: its loader reads the modules (a module of a group, a terms item
+      # and its common words, schema 3.20.0). OMX_CONTRACT_REF is the ref of the change that carries it; it becomes the
+      # release tag when omx-contract releases.
+      - name: The omx-contract command
+        env:
+          OMX_CONTRACT_REF: lane/omx-contract-domain-terms
         run: |
-          make check
+          git clone --depth 1 --branch "$OMX_CONTRACT_REF" https://github.com/Open-Mixer/omx-contract.git "$RUNNER_TEMP/omx-contract"
+          cd "$RUNNER_TEMP/omx-contract"
+          npm ci
+          make build-lib
+          echo "OMX_CONTRACT=$RUNNER_TEMP/omx-contract/bin/omx-contract.mjs" >> "$GITHUB_ENV"
+      - name: The modules validate, and the renders are the render omx-contract made of them before the move, byte for byte
+        run: make check
+      - name: The tree installs
+        run: |
           make install DESTDIR="$RUNNER_TEMP/inst" PREFIX=/usr
-          test -d "$RUNNER_TEMP/inst/usr/share/omx-contract/contract.d"
+          test -f "$RUNNER_TEMP/inst/usr/share/omx-contract/contract.d/formats/clap/clap.json"
+          test -f "$RUNNER_TEMP/inst/usr/include/omxcontract/omx_formats.h"
   deb:
     runs-on: ubuntu-latest
     steps:

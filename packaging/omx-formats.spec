@@ -28,7 +28,7 @@ omx-contract's readers read.
 %build
 
 %install
-make install DESTDIR=%{buildroot} PREFIX=%{_prefix} DATADIR=%{_datadir}
+make install DESTDIR=%{buildroot} PREFIX=%{_prefix} DATADIR=%{_datadir} INCLUDEDIR=%{_includedir}
 
 %check
 make check
@@ -36,8 +36,12 @@ make check
 %files
 %license LICENSE
 %doc README.md
-%{_datadir}/omx-contract/contract.d/
+%{_datadir}/omx-contract/contract.d/formats/
+%{_includedir}/omxcontract/omx_formats.h
+%{_datadir}/omx-formats/
 
 %changelog
 * Tue Nov 17 2026 Pau Aliagas <linuxnow@gmail.com> - 0.1.0-1
-- First release: the package, with no module yet.
+- The modules formats/common, formats/clap and formats/lv2 (the 82 terms items, 297 CLAP and 452 LV2 terms, moved from
+  omx-contract's data/formats/), and their renders: the C header and the Python module.
+- First release: the package.
