@@ -11,6 +11,7 @@ BuildArch: noarch
 Source0: %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildRequires: make
+BuildRequires: python3
 
 # the modules install into omx-contract's contract directory and are read by its command; a floor, never a ceiling
 Requires: omx-contract-data

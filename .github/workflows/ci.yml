@@ -57,7 +57,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build the noarch rpm
         run: |
-          dnf install -y rpm-build make tar gzip
+          dnf install -y rpm-build make tar gzip python3
           v=$(sed -n 's/^Version: *//p' packaging/omx-formats.spec)
           mkdir -p ~/rpmbuild/SOURCES
           tar --transform "s,^\./,omx-formats-$v/," -czf ~/rpmbuild/SOURCES/omx-formats-$v.tar.gz --exclude=.git .
