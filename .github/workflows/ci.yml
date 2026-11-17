@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2026 Pau Aliagas <linuxnow@gmail.com>
+# Copyright (C) 2026 Pau Aliagas
 name: ci
 
 on:
@@ -19,11 +19,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: The tree parses and installs
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # the omx-contract release this tree is built with: its loader reads the modules (a module of a group, a terms item
+      # and its common words, schema 3.20.0). OMX_CONTRACT_REF is the commit of omx-contract#87 that carries it, pinned
+      # by SHA; it becomes the release tag of omx-contract 3.21.0 (omx-contract#90).
+      - name: The omx-contract command
+        env:
+          OMX_CONTRACT_REF: 527b78c7938a24544ef5fde056fec4e4ed2de179
         run: |
-          make check
+          git init -q "$RUNNER_TEMP/omx-contract"
+          cd "$RUNNER_TEMP/omx-contract"
+          git fetch -q --depth 1 https://github.com/Open-Mixer/omx-contract.git "$OMX_CONTRACT_REF"
+          git checkout -q FETCH_HEAD
+          npm ci
+          make build-lib
+          echo "OMX_CONTRACT=$RUNNER_TEMP/omx-contract/bin/omx-contract.mjs" >> "$GITHUB_ENV"
+      - name: The modules validate, and the renders are the render omx-contract made of them before the move, byte for byte
+        run: make check
+      - name: The tree installs
+        run: |
           make install DESTDIR="$RUNNER_TEMP/inst" PREFIX=/usr
-          test -d "$RUNNER_TEMP/inst/usr/share/omx-contract/contract.d"
+          test -f "$RUNNER_TEMP/inst/usr/share/omx-contract/contract.d/formats/clap/clap.json"
+          test -f "$RUNNER_TEMP/inst/usr/include/omxcontract/omx_formats.h"
   deb:
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +50,7 @@ jobs:
       - name: Build the noarch deb
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends debhelper dpkg-dev
+          sudo apt-get install -y --no-install-recommends build-essential debhelper dpkg-dev fakeroot
           dpkg-buildpackage -us -uc -b
   rpm:
     runs-on: ubuntu-latest
@@ -40,7 +59,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build the noarch rpm
         run: |
-          dnf install -y rpm-build make tar gzip
+          dnf install -y rpm-build make tar gzip python3
           v=$(sed -n 's/^Version: *//p' packaging/omx-formats.spec)
           mkdir -p ~/rpmbuild/SOURCES
           tar --transform "s,^\./,omx-formats-$v/," -czf ~/rpmbuild/SOURCES/omx-formats-$v.tar.gz --exclude=.git .
