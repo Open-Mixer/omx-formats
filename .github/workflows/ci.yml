@@ -48,7 +48,7 @@ jobs:
       - name: Build the noarch deb
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends debhelper dpkg-dev
+          sudo apt-get install -y --no-install-recommends build-essential debhelper dpkg-dev fakeroot
           dpkg-buildpackage -us -uc -b
   rpm:
     runs-on: ubuntu-latest
