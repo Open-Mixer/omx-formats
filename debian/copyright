@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: omx-formats
+Upstream-Contact: Pau Aliagas <linuxnow@gmail.com>
+Source: https://github.com/Open-Mixer/omx-formats
+
+Files: *
+Copyright: 2026 Pau Aliagas <linuxnow@gmail.com>
+License: GPL-3.0-or-later

@@ -1,0 +1,5 @@
+omx-formats (0.1.0) unstable; urgency=medium
+
+  * First release: the package, with no module yet.
+
+ -- Pau Aliagas <linuxnow@gmail.com>  Tue, 17 Nov 2026 12:00:00 +0100

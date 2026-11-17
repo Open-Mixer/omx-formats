@@ -1,0 +1,47 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright (C) 2026 Pau Aliagas <linuxnow@gmail.com>
+name: ci
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  # Heavy jobs run only on workflow_dispatch (the release dry run dispatches this on a release head); a pull request
+  # runs public-sources.yml alone.
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: The tree parses and installs
+        run: |
+          make check
+          make install DESTDIR="$RUNNER_TEMP/inst" PREFIX=/usr
+          test -d "$RUNNER_TEMP/inst/usr/share/omx-contract/contract.d"
+  deb:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the noarch deb
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends debhelper dpkg-dev
+          dpkg-buildpackage -us -uc -b
+  rpm:
+    runs-on: ubuntu-latest
+    container: fedora:44
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the noarch rpm
+        run: |
+          dnf install -y rpm-build make tar gzip
+          v=$(sed -n 's/^Version: *//p' packaging/omx-formats.spec)
+          mkdir -p ~/rpmbuild/SOURCES
+          tar --transform "s,^\./,omx-formats-$v/," -czf ~/rpmbuild/SOURCES/omx-formats-$v.tar.gz --exclude=.git .
+          rpmbuild -bb packaging/omx-formats.spec

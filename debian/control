@@ -1,0 +1,19 @@
+Source: omx-formats
+Section: misc
+Priority: optional
+Maintainer: Pau Aliagas <linuxnow@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.2
+Homepage: https://github.com/Open-Mixer/omx-formats
+Rules-Requires-Root: no
+
+Package: omx-formats
+Architecture: all
+Multi-Arch: foreign
+Depends: omx-contract-data, ${misc:Depends}
+Description: The plugin-format vocabulary of OpenMixer, one module per format
+ The identifiers, numbers and terms of the plugin formats OpenMixer hosts,
+ each mapped under its own name with its status for us: one self-describing
+ module per format (CLAP, LV2) and a common module of the terms they share,
+ each with its own version and its catalogs. They install into the contract
+ directory omx-contract's readers read.
