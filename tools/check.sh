@@ -5,7 +5,7 @@
 # omx-contract command (bin/omx-contract.mjs of a checkout of the release this tree is built with, or the installed
 # omx-contract), it also: validates the modules; proves the committed renders are the render of the modules; and proves
 # them the render omx-contract's own classic data/formats/ made before the move (move 12 of omx-contract#81):
-#   - include/omxcontract/omx_formats.h and share/omx-formats/omx_formats.py are byte for byte what omx-contract
+#   - (banners aside, which name these modules) include/omxcontract/omx_formats.h and share/omx-formats/omx_formats.py are what omx-contract
 #     rendered from data/formats/ (the files were copied from its last render, the check holds the modules to them);
 #   - ts/formats.js and ts/formats.d.ts are the tail of omx-contract's ts render: the format values it ends with;
 #   - test/golden/terms.digest is the digest of every term of the classic 82 items (tools/terms-digest.mjs), which the
