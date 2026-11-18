@@ -11,7 +11,7 @@ its own version, shipped with its catalogs. The loader, the validator and the re
 ## Layout
 
 ```
-contract.d/formats/common/    the words every format's terms use: FORMAT_TERM_KINDS and FORMAT_TERM_STATUSES
+contract.d/formats/common/    the words every format's terms use: FORMATS_COMMON_TERM_KINDS and FORMATS_COMMON_TERM_STATUSES
 contract.d/formats/clap/      the CLAP terms
 contract.d/formats/lv2/       the LV2 terms
 contract.d/formats/<module>/catalogs/<lang>.json   the module's translations

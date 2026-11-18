@@ -8,17 +8,17 @@
   },
   "components": {
     "schemas": {
-      "LV2_ATOM_TERMS": {
+      "FORMATS_LV2_ATOM_TERMS": {
         "description": "The terms of the LV2 Atom specification (atom.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/atom",
         "x-version": "2.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -380,17 +380,17 @@
           }
         ]
       },
-      "LV2_BUF_SIZE_TERMS": {
+      "FORMATS_LV2_BUF_SIZE_TERMS": {
         "description": "The terms of the LV2 Buf Size specification (buf-size.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/buf-size",
         "x-version": "1.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -511,17 +511,17 @@
           }
         ]
       },
-      "LV2_CORE_TERMS": {
+      "FORMATS_LV2_CORE_TERMS": {
         "description": "The terms of the LV2 specification (core.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/lv2core",
         "x-version": "18.6",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1712,17 +1712,17 @@
           }
         ]
       },
-      "LV2_DATA_ACCESS_TERMS": {
+      "FORMATS_LV2_DATA_ACCESS_TERMS": {
         "description": "The terms of the data access specification (data-access.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/data-access",
         "x-version": "1.6",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1739,17 +1739,17 @@
           }
         ]
       },
-      "LV2_DYNMANIFEST_TERMS": {
+      "FORMATS_LV2_DYNMANIFEST_TERMS": {
         "description": "The terms of the LV2 Dyn Manifest specification (dynmanifest.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/dynmanifest",
         "x-version": "1.6",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1774,7 +1774,7 @@
           }
         ]
       },
-      "LV2_EVENT_TERMS": {
+      "FORMATS_LV2_EVENT_TERMS": {
         "description": "The terms of the LV2 Event specification (event.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
@@ -1782,10 +1782,10 @@
         "x-version": "1.14",
         "x-deprecated": true,
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1907,17 +1907,17 @@
           }
         ]
       },
-      "LV2_INSTANCE_ACCESS_TERMS": {
+      "FORMATS_LV2_INSTANCE_ACCESS_TERMS": {
         "description": "The terms of the instance access specification (instance-access.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/instance-access",
         "x-version": "1.6",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1934,17 +1934,17 @@
           }
         ]
       },
-      "LV2_LOG_TERMS": {
+      "FORMATS_LV2_LOG_TERMS": {
         "description": "The terms of the LV2 Log specification (log.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/log",
         "x-version": "2.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2033,17 +2033,17 @@
           }
         ]
       },
-      "LV2_MIDI_TERMS": {
+      "FORMATS_LV2_MIDI_TERMS": {
         "description": "The terms of the LV2 MIDI specification (midi.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/midi",
         "x-version": "1.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2476,17 +2476,17 @@
           }
         ]
       },
-      "LV2_MORPH_TERMS": {
+      "FORMATS_LV2_MORPH_TERMS": {
         "description": "The terms of the LV2 Morph specification (morph.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/morph",
         "x-version": "1.0",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2541,17 +2541,17 @@
           }
         ]
       },
-      "LV2_OPTIONS_TERMS": {
+      "FORMATS_LV2_OPTIONS_TERMS": {
         "description": "The terms of the LV2 Options specification (options.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/options",
         "x-version": "1.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2623,17 +2623,17 @@
           }
         ]
       },
-      "LV2_PARAMETERS_TERMS": {
+      "FORMATS_LV2_PARAMETERS_TERMS": {
         "description": "The terms of the LV2 Parameters specification (parameters.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/parameters",
         "x-version": "1.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2941,17 +2941,17 @@
           }
         ]
       },
-      "LV2_PATCH_TERMS": {
+      "FORMATS_LV2_PATCH_TERMS": {
         "description": "The terms of the LV2 Patch specification (patch.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/patch",
         "x-version": "2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3259,17 +3259,17 @@
           }
         ]
       },
-      "LV2_PORT_GROUPS_TERMS": {
+      "FORMATS_LV2_PORT_GROUPS_TERMS": {
         "description": "The terms of the LV2 Port Groups specification (port-groups.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/port-groups",
         "x-version": "1.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3938,17 +3938,17 @@
           }
         ]
       },
-      "LV2_PORT_PROPS_TERMS": {
+      "FORMATS_LV2_PORT_PROPS_TERMS": {
         "description": "The terms of the LV2 Port Properties specification (port-props.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/port-props",
         "x-version": "1.2",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4098,17 +4098,17 @@
           }
         ]
       },
-      "LV2_PRESETS_TERMS": {
+      "FORMATS_LV2_PRESETS_TERMS": {
         "description": "The terms of the LV2 Presets specification (presets.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/presets",
         "x-version": "2.8",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4180,17 +4180,17 @@
           }
         ]
       },
-      "LV2_RESIZE_PORT_TERMS": {
+      "FORMATS_LV2_RESIZE_PORT_TERMS": {
         "description": "The terms of the LV2 Resize Port specification (resize-port.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/resize-port",
         "x-version": "1.0",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4239,17 +4239,17 @@
           }
         ]
       },
-      "LV2_STATE_TERMS": {
+      "FORMATS_LV2_STATE_TERMS": {
         "description": "The terms of the LV2 State specification (state.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/state",
         "x-version": "2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4369,17 +4369,17 @@
           }
         ]
       },
-      "LV2_TIME_TERMS": {
+      "FORMATS_LV2_TIME_TERMS": {
         "description": "The terms of the LV2 Time specification (time.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/time",
         "x-version": "1.6",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4545,17 +4545,17 @@
           }
         ]
       },
-      "LV2_UI_TERMS": {
+      "FORMATS_LV2_UI_TERMS": {
         "description": "The terms of the LV2 UI specification (ui.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/extensions/ui",
         "x-version": "2.24",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4929,17 +4929,17 @@
           }
         ]
       },
-      "LV2_UNITS_TERMS": {
+      "FORMATS_LV2_UNITS_TERMS": {
         "description": "The terms of the LV2 Units specification (units.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/extensions/units",
         "x-version": "5.12",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -5367,7 +5367,7 @@
           }
         ]
       },
-      "LV2_URI_MAP_TERMS": {
+      "FORMATS_LV2_URI_MAP_TERMS": {
         "description": "The terms of the LV2 URI Map specification (uri-map.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
@@ -5375,10 +5375,10 @@
         "x-version": "1.6",
         "x-deprecated": true,
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -5394,17 +5394,17 @@
           }
         ]
       },
-      "LV2_URID_TERMS": {
+      "FORMATS_LV2_URID_TERMS": {
         "description": "The terms of the LV2 URID specification (urid.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/urid",
         "x-version": "1.4",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -5450,17 +5450,17 @@
           }
         ]
       },
-      "LV2_WORKER_TERMS": {
+      "FORMATS_LV2_WORKER_TERMS": {
         "description": "The terms of the LV2 Worker specification (worker.lv2, from lv2 1.18.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "lv2",
         "x-spec": "http://lv2plug.in/ns/ext/worker",
         "x-version": "1.2",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
