@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://openmixer.org/contract/formats/lv2",
   "info": {
     "title": "The LV2 terms",
