@@ -23,11 +23,11 @@ jobs:
         with:
           node-version: 22
       # the omx-contract release this tree is built with: its loader reads the modules (a module of a group, a terms item
-      # and its common words, schema 3.20.0). OMX_CONTRACT_REF is the commit of omx-contract#87 that carries it, pinned
+      # and its common words, schema 3.20.0). OMX_CONTRACT_REF is the commit of omx-contract#112 that carries it, pinned
       # by SHA; it becomes the release tag of omx-contract 3.21.0 (omx-contract#90).
       - name: The omx-contract command
         env:
-          OMX_CONTRACT_REF: 527b78c7938a24544ef5fde056fec4e4ed2de179
+          OMX_CONTRACT_REF: 61c928d7b0cc62832980b61769f730a23817e841
         run: |
           git init -q "$RUNNER_TEMP/omx-contract"
           cd "$RUNNER_TEMP/omx-contract"

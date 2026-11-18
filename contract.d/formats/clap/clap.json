@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://openmixer.org/contract/formats/clap",
   "info": {
     "title": "The CLAP terms",
@@ -7,17 +8,17 @@
   },
   "components": {
     "schemas": {
-      "CLAP_COLOR_TERMS": {
+      "FORMATS_CLAP_COLOR_TERMS": {
         "description": "The identifiers of the CLAP header clap/color.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/color.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -32,17 +33,17 @@
           }
         ]
       },
-      "CLAP_EVENTS_TERMS": {
+      "FORMATS_CLAP_EVENTS_TERMS": {
         "description": "The identifiers of the CLAP header clap/events.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/events.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -432,17 +433,17 @@
           }
         ]
       },
-      "CLAP_EXT_AMBISONIC_TERMS": {
+      "FORMATS_CLAP_EXT_AMBISONIC_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/ambisonic.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/ambisonic.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -550,17 +551,17 @@
           }
         ]
       },
-      "CLAP_EXT_AUDIO_PORTS_ACTIVATION_TERMS": {
+      "FORMATS_CLAP_EXT_AUDIO_PORTS_ACTIVATION_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/audio-ports-activation.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/audio-ports-activation.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -587,17 +588,17 @@
           }
         ]
       },
-      "CLAP_EXT_AUDIO_PORTS_CONFIG_TERMS": {
+      "FORMATS_CLAP_EXT_AUDIO_PORTS_CONFIG_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/audio-ports-config.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/audio-ports-config.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -635,17 +636,17 @@
           }
         ]
       },
-      "CLAP_EXT_AUDIO_PORTS_TERMS": {
+      "FORMATS_CLAP_EXT_AUDIO_PORTS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/audio-ports.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/audio-ports.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -802,17 +803,17 @@
           }
         ]
       },
-      "CLAP_EXT_CONFIGURABLE_AUDIO_PORTS_TERMS": {
+      "FORMATS_CLAP_EXT_CONFIGURABLE_AUDIO_PORTS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/configurable-audio-ports.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/configurable-audio-ports.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -839,17 +840,17 @@
           }
         ]
       },
-      "CLAP_EXT_CONTEXT_MENU_TERMS": {
+      "FORMATS_CLAP_EXT_CONTEXT_MENU_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/context-menu.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/context-menu.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -956,17 +957,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_BACKGROUND_ACTIVATION_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_BACKGROUND_ACTIVATION_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/background-activation.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/background-activation.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -982,17 +983,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_BACKGROUND_PROGRESS_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_BACKGROUND_PROGRESS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/background-progress.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/background-progress.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1008,17 +1009,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_BACKGROUND_STATE_CONTEXT_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_BACKGROUND_STATE_CONTEXT_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/background-state-context.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/background-state-context.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1034,17 +1035,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_EXTENSIBLE_AUDIO_PORTS_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_EXTENSIBLE_AUDIO_PORTS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/extensible-audio-ports.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/extensible-audio-ports.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1060,17 +1061,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_FLUSH_EVENTS_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_FLUSH_EVENTS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/flush-events.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/flush-events.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1086,17 +1087,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_GAIN_ADJUSTMENT_METERING_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_GAIN_ADJUSTMENT_METERING_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/gain-adjustment-metering.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/gain-adjustment-metering.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1114,17 +1115,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_MINI_CURVE_DISPLAY_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_MINI_CURVE_DISPLAY_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/mini-curve-display.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/mini-curve-display.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1220,17 +1221,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_OCTAVE_NUMBER_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_OCTAVE_NUMBER_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/octave-number.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/octave-number.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1246,17 +1247,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_PARAM_HOVERED_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_PARAM_HOVERED_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/param-hovered.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/param-hovered.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1272,17 +1273,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_PARAMS_ORIGIN_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_PARAMS_ORIGIN_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/params-origin.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/params-origin.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1298,17 +1299,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_PROJECT_LOCATION_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_PROJECT_LOCATION_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/project-location.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/project-location.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1444,17 +1445,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_RESOURCE_DIRECTORY_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_RESOURCE_DIRECTORY_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/resource-directory.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/resource-directory.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1470,17 +1471,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_SCRATCH_MEMORY_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_SCRATCH_MEMORY_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/scratch-memory.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/scratch-memory.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1496,17 +1497,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_TRANSPORT_CONTROL_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_TRANSPORT_CONTROL_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/transport-control.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/transport-control.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1522,17 +1523,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_TRIGGERS_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_TRIGGERS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/triggers.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/triggers.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1638,17 +1639,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_TUNING_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_TUNING_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/tuning.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/tuning.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1664,17 +1665,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_UNDO_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_UNDO_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/undo.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/undo.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1712,17 +1713,17 @@
           }
         ]
       },
-      "CLAP_EXT_DRAFT_WEBVIEW_TERMS": {
+      "FORMATS_CLAP_EXT_DRAFT_WEBVIEW_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/draft/webview.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/draft/webview.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1749,17 +1750,17 @@
           }
         ]
       },
-      "CLAP_EXT_EVENT_REGISTRY_TERMS": {
+      "FORMATS_CLAP_EXT_EVENT_REGISTRY_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/event-registry.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/event-registry.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1775,17 +1776,17 @@
           }
         ]
       },
-      "CLAP_EXT_GUI_TERMS": {
+      "FORMATS_CLAP_EXT_GUI_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/gui.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/gui.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1856,17 +1857,17 @@
           }
         ]
       },
-      "CLAP_EXT_LATENCY_TERMS": {
+      "FORMATS_CLAP_EXT_LATENCY_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/latency.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/latency.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1887,17 +1888,17 @@
           }
         ]
       },
-      "CLAP_EXT_LOG_TERMS": {
+      "FORMATS_CLAP_EXT_LOG_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/log.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/log.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -1991,17 +1992,17 @@
           }
         ]
       },
-      "CLAP_EXT_NOTE_NAME_TERMS": {
+      "FORMATS_CLAP_EXT_NOTE_NAME_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/note-name.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/note-name.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2020,17 +2021,17 @@
           }
         ]
       },
-      "CLAP_EXT_NOTE_PORTS_TERMS": {
+      "FORMATS_CLAP_EXT_NOTE_PORTS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/note-ports.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/note-ports.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2134,17 +2135,17 @@
           }
         ]
       },
-      "CLAP_EXT_PARAM_INDICATION_TERMS": {
+      "FORMATS_CLAP_EXT_PARAM_INDICATION_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/param-indication.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/param-indication.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2221,17 +2222,17 @@
           }
         ]
       },
-      "CLAP_EXT_PARAMS_TERMS": {
+      "FORMATS_CLAP_EXT_PARAMS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/params.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/params.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2562,17 +2563,17 @@
           }
         ]
       },
-      "CLAP_EXT_POSIX_FD_SUPPORT_TERMS": {
+      "FORMATS_CLAP_EXT_POSIX_FD_SUPPORT_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/posix-fd-support.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/posix-fd-support.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2618,17 +2619,17 @@
           }
         ]
       },
-      "CLAP_EXT_PRESET_LOAD_TERMS": {
+      "FORMATS_CLAP_EXT_PRESET_LOAD_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/preset-load.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/preset-load.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2662,17 +2663,17 @@
           }
         ]
       },
-      "CLAP_EXT_REMOTE_CONTROLS_TERMS": {
+      "FORMATS_CLAP_EXT_REMOTE_CONTROLS_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/remote-controls.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/remote-controls.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2721,17 +2722,17 @@
           }
         ]
       },
-      "CLAP_EXT_RENDER_TERMS": {
+      "FORMATS_CLAP_EXT_RENDER_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/render.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/render.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2767,17 +2768,17 @@
           }
         ]
       },
-      "CLAP_EXT_STATE_CONTEXT_TERMS": {
+      "FORMATS_CLAP_EXT_STATE_CONTEXT_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/state-context.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/state-context.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2823,17 +2824,17 @@
           }
         ]
       },
-      "CLAP_EXT_STATE_TERMS": {
+      "FORMATS_CLAP_EXT_STATE_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/state.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/state.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -2853,17 +2854,17 @@
           }
         ]
       },
-      "CLAP_EXT_SURROUND_TERMS": {
+      "FORMATS_CLAP_EXT_SURROUND_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/surround.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/surround.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3104,17 +3105,17 @@
           }
         ]
       },
-      "CLAP_EXT_TAIL_TERMS": {
+      "FORMATS_CLAP_EXT_TAIL_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/tail.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/tail.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3130,17 +3131,17 @@
           }
         ]
       },
-      "CLAP_EXT_THREAD_CHECK_TERMS": {
+      "FORMATS_CLAP_EXT_THREAD_CHECK_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/thread-check.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/thread-check.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3160,17 +3161,17 @@
           }
         ]
       },
-      "CLAP_EXT_THREAD_POOL_TERMS": {
+      "FORMATS_CLAP_EXT_THREAD_POOL_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/thread-pool.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/thread-pool.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3186,17 +3187,17 @@
           }
         ]
       },
-      "CLAP_EXT_TIMER_SUPPORT_TERMS": {
+      "FORMATS_CLAP_EXT_TIMER_SUPPORT_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/timer-support.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/timer-support.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3212,17 +3213,17 @@
           }
         ]
       },
-      "CLAP_EXT_TRACK_INFO_TERMS": {
+      "FORMATS_CLAP_EXT_TRACK_INFO_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/track-info.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/track-info.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3332,17 +3333,17 @@
           }
         ]
       },
-      "CLAP_EXT_VOICE_INFO_TERMS": {
+      "FORMATS_CLAP_EXT_VOICE_INFO_TERMS": {
         "description": "The identifiers of the CLAP header clap/ext/voice-info.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/ext/voice-info.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3376,17 +3377,17 @@
           }
         ]
       },
-      "CLAP_FACTORY_DRAFT_PLUGIN_INVALIDATION_TERMS": {
+      "FORMATS_CLAP_FACTORY_DRAFT_PLUGIN_INVALIDATION_TERMS": {
         "description": "The identifiers of the CLAP header clap/factory/draft/plugin-invalidation.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/factory/draft/plugin-invalidation.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3402,17 +3403,17 @@
           }
         ]
       },
-      "CLAP_FACTORY_DRAFT_PLUGIN_STATE_CONVERTER_TERMS": {
+      "FORMATS_CLAP_FACTORY_DRAFT_PLUGIN_STATE_CONVERTER_TERMS": {
         "description": "The identifiers of the CLAP header clap/factory/draft/plugin-state-converter.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/factory/draft/plugin-state-converter.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3428,17 +3429,17 @@
           }
         ]
       },
-      "CLAP_FACTORY_PLUGIN_FACTORY_TERMS": {
+      "FORMATS_CLAP_FACTORY_PLUGIN_FACTORY_TERMS": {
         "description": "The identifiers of the CLAP header clap/factory/plugin-factory.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/factory/plugin-factory.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3458,17 +3459,17 @@
           }
         ]
       },
-      "CLAP_FACTORY_PRESET_DISCOVERY_TERMS": {
+      "FORMATS_CLAP_FACTORY_PRESET_DISCOVERY_TERMS": {
         "description": "The identifiers of the CLAP header clap/factory/preset-discovery.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/factory/preset-discovery.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3560,17 +3561,17 @@
           }
         ]
       },
-      "CLAP_FIXEDPOINT_TERMS": {
+      "FORMATS_CLAP_FIXEDPOINT_TERMS": {
         "description": "The identifiers of the CLAP header clap/fixedpoint.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/fixedpoint.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3600,17 +3601,17 @@
           }
         ]
       },
-      "CLAP_ID_TERMS": {
+      "FORMATS_CLAP_ID_TERMS": {
         "description": "The identifiers of the CLAP header clap/id.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/id.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -3629,17 +3630,17 @@
           }
         ]
       },
-      "CLAP_PLUGIN_FEATURES_TERMS": {
+      "FORMATS_CLAP_PLUGIN_FEATURES_TERMS": {
         "description": "The identifiers of the CLAP header clap/plugin-features.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/plugin-features.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4162,17 +4163,17 @@
           }
         ]
       },
-      "CLAP_PROCESS_TERMS": {
+      "FORMATS_CLAP_PROCESS_TERMS": {
         "description": "The identifiers of the CLAP header clap/process.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/process.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4235,17 +4236,17 @@
           }
         ]
       },
-      "CLAP_STRING_SIZES_TERMS": {
+      "FORMATS_CLAP_STRING_SIZES_TERMS": {
         "description": "The identifiers of the CLAP header clap/string-sizes.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/string-sizes.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4274,17 +4275,17 @@
           }
         ]
       },
-      "CLAP_TIMESTAMP_TERMS": {
+      "FORMATS_CLAP_TIMESTAMP_TERMS": {
         "description": "The identifiers of the CLAP header clap/timestamp.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/timestamp.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {
@@ -4299,17 +4300,17 @@
           }
         ]
       },
-      "CLAP_VERSION_TERMS": {
+      "FORMATS_CLAP_VERSION_TERMS": {
         "description": "The identifiers of the CLAP header clap/version.h (clap 1.2.10), each mapped under its own name with its status for us (docs/data-layout.md).",
         "x-since": "2.18.0",
         "x-format": "clap",
         "x-spec": "clap/version.h",
         "x-version": "1.2.10",
         "x-kinds": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_KINDS"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_KINDS"
         },
         "x-statuses": {
-          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMAT_TERM_STATUSES"
+          "$ref": "https://openmixer.org/contract/formats/common#/components/schemas/FORMATS_COMMON_TERM_STATUSES"
         },
         "oneOf": [
           {

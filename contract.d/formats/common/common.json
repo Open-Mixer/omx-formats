@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://openmixer.org/contract/formats/common",
   "info": {
     "title": "The terms every plugin format shares",
@@ -7,7 +8,7 @@
   },
   "components": {
     "schemas": {
-      "FORMAT_TERM_KINDS": {
+      "FORMATS_COMMON_TERM_KINDS": {
         "description": "What a term of a plugin format is.",
         "x-since": "1.0.0",
         "oneOf": [
@@ -169,7 +170,7 @@
           }
         ]
       },
-      "FORMAT_TERM_STATUSES": {
+      "FORMATS_COMMON_TERM_STATUSES": {
         "description": "What a term is to us.",
         "x-since": "1.0.0",
         "oneOf": [
