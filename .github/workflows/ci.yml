@@ -54,7 +54,7 @@ jobs:
           dpkg-buildpackage -us -uc -b
   rpm:
     runs-on: ubuntu-latest
-    container: fedora:44
+    container: fedora:45
     steps:
       - uses: actions/checkout@v4
       - name: Build the noarch rpm
