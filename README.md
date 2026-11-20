@@ -15,7 +15,7 @@ after the owners' pull requests land (O5), and nothing new is written here.
 | `contract.d/formats/common/common.json` | `FORMAT_TERM_KINDS`, `FORMAT_TERM_STATUSES` (29 words) | plugin-db, domain `format`: `contract.d/format/format.json`, names and words unchanged |
 | `contract.d/formats/lv2/lv2.json` | the 24 LV2 terms items (452 terms): `LV2_ATOM_TERMS`, `LV2_BUF_SIZE_TERMS`, `LV2_CORE_TERMS`, `LV2_DATA_ACCESS_TERMS`, `LV2_DYNMANIFEST_TERMS`, `LV2_EVENT_TERMS`, `LV2_INSTANCE_ACCESS_TERMS`, `LV2_LOG_TERMS`, `LV2_MIDI_TERMS`, `LV2_MORPH_TERMS`, `LV2_OPTIONS_TERMS`, `LV2_PARAMETERS_TERMS`, `LV2_PATCH_TERMS`, `LV2_PORT_GROUPS_TERMS`, `LV2_PORT_PROPS_TERMS`, `LV2_PRESETS_TERMS`, `LV2_RESIZE_PORT_TERMS`, `LV2_STATE_TERMS`, `LV2_TIME_TERMS`, `LV2_UI_TERMS`, `LV2_UNITS_TERMS`, `LV2_URI_MAP_TERMS`, `LV2_URID_TERMS`, `LV2_WORKER_TERMS` | plugin-db, domain `lv2`: `contract.d/lv2/lv2.json`, names and terms unchanged (omx-contract's terms kind), beside the F1 mapping of the LV2 units, designations and port properties to the standard words (sorting pass V27a, F1, O1) |
 | `contract.d/formats/clap/clap.json` | the 58 CLAP terms items (297 terms), `CLAP_COLOR_TERMS` to `CLAP_VERSION_TERMS` | omx-clap-core, domain `clap`, with the F2 mapping (sorting pass V27b, O2) |
-| `include/omxcontract/omx_formats.h`, `share/omx-formats/omx_formats.py`, `ts/formats.js`, `ts/formats.d.ts` | the renders of the 82 items | none: nothing includes or imports them (a grep over every repository finds no reader); an owner renders its own domain when a reader needs it |
+| `include/omxcontract/omx_formats.h`, `share/omx-formats/omx_formats.py`, `ts/formats.js`, `ts/formats.d.ts` | the renders of the 82 items | none: nothing includes or imports them (a grep over every repository finds no reader); an owner renders its own domain when a reader needs it. Their comparison with omx-contract's renders left with those renders (omx-contract renders no format terms after V27b): `make check` no longer makes it, and the files stay here unchanged until the archive |
 | `test/golden/terms.digest` | the digest of the 82 classic items | split: plugin-db `tests/golden/lv2-terms.digest` (the 24 LV2 items, `tests/lv2_domain_test.py`); the CLAP half with omx-clap-core's domain |
 | `tools/check.sh`, `tools/terms-digest.mjs`, `Makefile` | the tree's check and install | each owner's own tests and install of its domains |
 | `debian/`, `packaging/omx-formats.spec`, `.github/`, `.githooks/` | packaging and CI of a package never released | none: no package is built |
@@ -47,7 +47,7 @@ term has a translation today (no catalog of omx-contract keys a format item), so
 translations go in `contract.d/formats/<module>/catalogs/<lang>.json`, which omx-contract's reader takes with the module
 (owner `omx-formats`).
 
-The renders, committed and held to the modules by `make check`: `include/omxcontract/omx_formats.h` (the C header),
+The renders, committed (until the sorting pass held to omx-contract's renders by `make check`; that comparison left with omx-contract's format renders): `include/omxcontract/omx_formats.h` (the C header),
 `share/omx-formats/omx_formats.py` (the Python module) and `ts/formats.js` with `ts/formats.d.ts` (the TypeScript
 values). They are byte for byte what omx-contract rendered from its own `data/formats/` before the move.
 
@@ -67,7 +67,7 @@ tag and never by a push or a pull request). The packages: `omx-formats` (the mod
 
 ## Work on it
 
-`make check` parses every module; with `OMX_CONTRACT` set to the omx-contract command it validates them and holds the renders and the terms to omx-contract's own. `make install DESTDIR=...` installs `contract.d/`. A
+`make check` parses every module; with `OMX_CONTRACT` set to the omx-contract command it validates them (the omx-contract of ci.yml's pin) and holds the terms to the classic digest. `make install DESTDIR=...` installs `contract.d/`. A
 pull request runs the fast checks only; the packages build on `workflow_dispatch` and on a `v*` tag.
 
 Licence: GPL-3.0-or-later.

@@ -36,7 +36,8 @@ jobs:
           npm ci
           make build-lib
           echo "OMX_CONTRACT=$RUNNER_TEMP/omx-contract/bin/omx-contract.mjs" >> "$GITHUB_ENV"
-      - name: The modules validate, and the renders are the render omx-contract made of them before the move, byte for byte
+      # the renders are no longer compared with omx-contract's: omx-contract renders no format terms after the sorting pass (V27b)
+      - name: The modules validate, and their terms are the classic terms
         run: make check
       - name: The tree installs
         run: |
