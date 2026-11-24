@@ -3,7 +3,7 @@
 #
 # Installs contract.d/ (the format modules) under CONTRACTDIR, the directory omx-contract's readers read, and the committed
 # renders of the modules: the C header under INCLUDEDIR/omxcontract, the Python module under FORMATSDIR. No node runs
-# here: a package build installs files only. `make check` is the shell check of the tree; with OMX_CONTRACT set (the omx-contract command) it also holds the renders to the modules and to omx-contract's own.
+# here: a package build installs files only. `make check` is the shell check of the tree; with OMX_CONTRACT set (the omx-contract command of ci.yml's pin) it also validates the modules and holds their terms to the classic digest; the renders are no longer compared with omx-contract's, which renders no format terms after the sorting pass.
 
 PREFIX ?= /usr/local
 DATADIR ?= $(PREFIX)/share
